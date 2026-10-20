@@ -1,0 +1,22 @@
+Simple task management app.
+
+Actors:
+- User: a person who manages their own tasks.
+- Admin: can view all users' tasks (for support purposes).
+
+Functional requirements:
+- User can register and log in with email + password.
+- User can create a task with title, description (optional), due date (optional).
+- User can list their tasks, filtered by status (todo / in_progress / done).
+- User can update a task's title, description, due date, and status.
+- User can mark a task as done.
+- User can delete a task.
+- Admin can view any user's task list.
+
+Non-functional requirements:
+- Performance: p95 API latency <= 200 ms for list operations on 10k tasks.
+- Security: passwords hashed with bcrypt; all traffic over HTTPS; data encrypted at rest.
+- Reliability: 99.5% monthly uptime.
+- Usability: task creation must complete in <= 3 user actions.
+- Maintainability: unit test coverage >= 80%.
+
